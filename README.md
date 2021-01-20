@@ -1,7 +1,7 @@
 ![](https://cdn.discordapp.com/attachments/601268924251897856/625840747828084757/node-hill_SMALL.png)
 
 ### What is this?
-A Brick Hill legacy server written from the ground up in Node.js.
+A Brick Hill legacy server written from the ground up in Node.js. (Now with Docker support.)
 
 ### What does this do?
 It allows you to host Brick Hill servers efficiently, and headlessly (VPS hosting, etc). It comes

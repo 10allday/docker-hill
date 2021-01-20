@@ -1,0 +1,26 @@
+{
+  "name": "node-hill",
+  "version": "10.1.0",
+  "description": "A Brick Hill legacy server written in node.js.",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "nh-admin": "^1.0.1",
+    "phin": "^3.5.1",
+    "smart-buffer": "^4.1.0",
+    "vm2": "^3.9.2"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/node": "^12.19.11",
+    "generate-changelog": "^1.8.0",
+    "typedoc": "^0.15.8"
+  },
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "sync-account": "node ./brick-hill/login.js"
+  },
+  "author": "Meta_data",
+  "license": "MIT",
+  "repository": "gitlab:Meta_data/node-hill"
+}

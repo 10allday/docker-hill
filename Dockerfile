@@ -1,15 +1,6 @@
-FROM node:10-alpine
+FROM ubuntu:latest
+MAINTAINER 10allday hello@10allday.com
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-
-WORKDIR /home/node/app
-
-COPY package*.json ./
-
-USER node
-
-RUN npm install
-
-COPY --chown=node:node . .
-
-CMD [ "node", "start.js" ]
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get install -y node-hill@latest

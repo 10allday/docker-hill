@@ -1,5 +1,5 @@
 {
-  "name": "node-hill",
+  "name": "docker-hill",
   "version": "10.1.0",
   "description": "A Brick Hill legacy server written in node.js.",
   "main": "./dist/index.js",

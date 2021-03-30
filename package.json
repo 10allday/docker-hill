@@ -20,7 +20,7 @@
     "start": "node ./start.js",
     "sync-account": "node ./brick-hill/login.js"
   },
-  "author": "10allday/Meta_data"
+  "author": "10allday"
   "license": "MIT",
   "repository": "github:brick-hill/docker-hill"
 }

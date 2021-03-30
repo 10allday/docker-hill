@@ -2,7 +2,7 @@
   "name": "docker-hill",
   "version": "10.1.0",
   "description": "A Brick Hill legacy server written in node.js.",
-  "main": "./dist/index.js",
+  "main": "./start.js",
   "dependencies": {
     "glob": "^7.1.6",
     "nh-admin": "^1.0.1",
@@ -17,10 +17,10 @@
     "typedoc": "0.20.23"
   },
   "scripts": {
-    "start": "node ./dist/index.js",
+    "start": "node ./start.js",
     "sync-account": "node ./brick-hill/login.js"
   },
-  "author": "Meta_data",
+  "author": "10allday/Meta_data"
   "license": "MIT",
-  "repository": "gitlab:Meta_data/node-hill"
+  "repository": "github:brick-hill/docker-hill"
 }

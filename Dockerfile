@@ -6,5 +6,6 @@ RUN apt-get -y upgrade
 
 COPY package*.json ./
 
-RUN npm install node-hill@latest
-RUN npm run start
+RUN npm install
+
+RUN  node ./start.js

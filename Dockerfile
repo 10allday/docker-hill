@@ -8,4 +8,4 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN  node ./start.js
+RUN node .\start.js

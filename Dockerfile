@@ -1,11 +1,19 @@
 FROM node:14
-MAINTAINER 10allday hello@10allday.com
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
+# Create app directory
+WORKDIR /usr/src/app
 
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
 COPY package*.json ./
 
 RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
 
-RUN node .\start.js
+# Bundle app source
+COPY . .
+
+EXPOSE 42480
+CMD [ "node", "start.js" ]

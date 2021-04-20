@@ -1,7 +1,7 @@
 {
   "name": "docker-hill",
   "version": "10.1.0",
-  "description": "A Brick Hill legacy server written in node.js.",
+  "description": "Docker version of node-hill",
   "main": "./start.js",
   "dependencies": {
     "glob": "^7.1.6",
@@ -16,8 +16,9 @@
     "generate-changelog": "1.8.0",
     "typedoc": "0.20.34"
   },
-  "scripts": {
-    "start": "node ./start.js",
+ "scripts": {
+   "start": "nodemon --inspect=0.0.0.0 src/index.js",
+   "start:prod": "node src/index.js"
     "sync-account": "node ./brick-hill/login.js"
   },
   "author": "10allday",
